@@ -42,5 +42,20 @@ func readR() []rune {
 }
 
 func main() {
+	A := readI()
+	B := readI()
+	C := readI()
+	X := readI()
+	var cnt int = 0
 
+	for i := 0; i <= A; i++ {
+		for k := 0; k <= B; k++ {
+			for j := 0; j <= C; j++ {
+				if i*500+k*100+j*50 == X {
+					cnt++
+				}
+			}
+		}
+	}
+	fmt.Println(cnt)
 }
