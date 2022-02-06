@@ -41,6 +41,13 @@ func readR() []rune {
 	return []rune(readS())
 }
 
+func digit(i int, list []int) []int {
+	if i > 0 {
+		return digit(i/10, append(list, i%10))
+	}
+	return list
+}
+
 func main() {
 
 }
