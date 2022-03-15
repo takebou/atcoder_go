@@ -58,5 +58,6 @@ func digit(i int, list []int) []int {
 }
 
 func main() {
+	sc.Buffer(make([]byte, 64*1024), 100001)
 
 }
