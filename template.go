@@ -57,6 +57,18 @@ func digit(i int, list []int) []int {
 	return list
 }
 
+func intSliceUnique(list []int) []int {
+	m := make(map[int]int)
+	slim := make([]int, 0)
+	for _, e := range list {
+		if _, ok := m[e]; !ok {
+			m[e] = 0
+			slim = append(slim, e)
+		}
+	}
+	return slim
+}
+
 func main() {
 	sc.Buffer(make([]byte, 64*1024), 100001)
 
