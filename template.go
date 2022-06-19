@@ -69,6 +69,13 @@ func intSliceUnique(list []int) []int {
 	return slim
 }
 
+func abs(i int) int {
+	if i < 0 {
+		i = i * -1
+	}
+	return i
+}
+
 func main() {
 	sc.Buffer(make([]byte, 64*1024), 100001)
 
